@@ -1,0 +1,58 @@
+/* Gaya untuk container dan elemen lainnya */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-btn {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: #2980b9;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+button:hover:enabled {
+    background-color: #2ecc71;
+}
+
+.result-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result-section img {
+    margin-top: 20px;
+}

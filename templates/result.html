@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Semangka</title>
+</head>
+<body>
+    <h1>Upload Gambar untuk Deteksi Semangka</h1>
+    <!-- Upload Form -->
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileInput">
+        <button type="submit" id="predictBtn" disabled>Analisis Semangka</button>
+    </form>
+
+    <!-- Preview Image -->
+    <div id="dropZone" style="border: 2px dashed #3498db; padding: 20px; margin: 20px;">
+        <p>Seret dan lepaskan gambar semangka di sini</p>
+        <img id="previewImage" src="" alt="Image Preview" style="max-width: 100%; display: none;">
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-section" style="display: none;">
+        <h2>Hasil Analisis</h2>
+        <p><strong>Kondisi Semangka:</strong> <span id="diseaseType"></span></p>
+        <p><strong>Kepercayaan:</strong> <span id="confidence"></span></p>
+        <p><strong>Detail:</strong> <span id="details"></span></p>
+        <img id="resultImage" src="" alt="Hasil Gambar" style="max-width: 100%; display: none;">
+    </div>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
